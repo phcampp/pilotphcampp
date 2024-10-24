@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upamento de Contas - phcampp</title>
+    <style>
+        body {
+            background-image: url('fundo-gamer.jpg'); /* Colocar uma imagem de fundo temática gamer */
+            background-size: cover;
+            font-family: 'Press Start 2P', cursive; /* Fonte estilo gamer */
+            color: #fff;
+            text-align: center;
+        }
+        h1 {
+            color: #ff0000;
+            animation: glow 1s infinite alternate;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000; }
+            to { text-shadow: 0 0 20px #ff5555, 0 0 30px #ff5555; }
+        }
+        .game-list {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .game {
+            font-size: 24px;
+            margin: 20px;
+            padding: 10px;
+            border: 2px solid #ff0000;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+        .game:hover {
+            transform: scale(1.1);
+        }
+        .discord-banner img {
+            width: 300px;
+            height: auto;
+            cursor: pointer;
+        }
+        .feedback-section {
+            margin-top: 50px;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .feedback-form input, .feedback-form textarea {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 80%;
+            background-color: #333;
+            color: white;
+            border: 1px solid #ff0000;
+        }
+        .submit-btn {
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .submit-btn:hover {
+            background-color: #d40000;
+            animation: shake 0.5s;
+        }
+        @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            25% { transform: translate(-1px, -2px) rotate(-1deg); }
+            50% { transform: translate(-3px, 0px) rotate(1deg); }
+            75% { transform: translate(3px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -1px) rotate(-1deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Serviço de Upamento de Contas - phcampp</h1>
+
+    <div class="game-list">
+        <div class="game">Blood Strike</div>
+        <div class="game">Free Fire</div>
+        <div class="game">Fortnite</div>
+        <div class="game">Roblox</div>
+        <div class="game">Standoff 2</div>
+    </div>
+
+    <!-- Banner do Discord -->
+    <div class="discord-banner">
+        <a href="https://discord.gg/bgWEqmFw" target="_blank">
+            <img src="https://discord.com/assets/0c8de2b2bb66492c9949c20eb3af33e9.svg" alt="Discord Banner">
+        </a>
+        <p>Clique no banner para entrar no Discord</p>
+    </div>
+
+    <!-- Seção de Feedback -->
+    <div class="feedback-section">
+        <h2>Deixe seu Feedback</h2>
+        <form class="feedback-form">
+            <input type="text" placeholder="Seu nome">
+            <textarea rows="4" placeholder="Escreva seu feedback aqui"></textarea>
+            <button type="submit" class="submit-btn">Enviar Feedback</button>
+        </form>
+    </div>
+
+    <p>Para mais informações, oferecemos upamentos em qualquer patente nos jogos listados acima. Entre em contato pelo Discord.</p>
+
+</body>
+</html>
